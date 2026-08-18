@@ -270,7 +270,7 @@
 <header>
   <div class="eyebrow">Berhampur Area &middot; Field Data Capture</div>
   <h1>DAB Data Collection</h1>
-  <p class="sub">Log Digital Agent Booth (FSE / DAB) details against the assigned JC &amp; JP chain.</p>
+  <p class="sub">Log Digital Agent Booth (FSE / DAB) details against the assigned JC &amp; JP Name.</p>
   <div class="ticket">Entries logged this session: <b id="sessionCount">0</b></div>
 </header>
 
@@ -285,15 +285,15 @@
 
       <div class="field">
         <label for="jcName">JC Name</label>
-        <input type="text" id="jcName" name="JC Name" placeholder="e.g. Ranjit Sahu" required>
+        <input type="text" id="jcName" name="JC Name" placeholder="e.g. BRAH" required>
       </div>
       <div class="field">
         <label for="jpId">JP ID</label>
-        <input type="text" id="jpId" name="JP ID" placeholder="e.g. JP0234" required>
+        <input type="text" id="jpId" name="JP ID" placeholder="e.g. IBV4" required>
       </div>
       <div class="field">
         <label for="jpName">JP Name</label>
-        <input type="text" id="jpName" name="JP Name" placeholder="e.g. Suresh Behera" required>
+        <input type="text" id="jpName" name="JP Name" placeholder="e.g. Junagarh" required>
       </div>
     </div>
 
@@ -305,11 +305,11 @@
 
       <div class="field">
         <label for="distPrm">Distributor PRM ID</label>
-        <input type="text" id="distPrm" name="Distributor PRM ID" placeholder="e.g. PRM10023" required>
+        <input type="text" id="distPrm" name="Distributor PRM ID" placeholder="e.g. 066xxxx" required>
       </div>
       <div class="field">
         <label for="retPrm">Retailer PRM ID</label>
-        <input type="text" id="retPrm" name="Retailer PRM ID" placeholder="e.g. PRM55871" required>
+        <input type="text" id="retPrm" name="Retailer PRM ID" placeholder="e.g. 0666xxxx" required>
       </div>
     </div>
 
@@ -321,7 +321,7 @@
 
       <div class="field">
         <label for="agentId">Agent ID</label>
-        <input type="text" id="agentId" name="Agent ID" placeholder="e.g. AG78341" required>
+        <input type="text" id="agentId" name="Agent ID" placeholder="e.g. 0698xxx" required>
       </div>
       <div class="field">
         <label for="gid">GID of Agent ID</label>
@@ -345,7 +345,7 @@
 
       <div class="field">
         <label for="dabName">DAB Name</label>
-        <input type="text" id="dabName" name="DAB Name" placeholder="e.g. Sriram Digital Point" required>
+        <input type="text" id="dabName" name="DAB Name" placeholder="e.g. Sriram Panda" required>
       </div>
       <div class="field">
         <label for="dabContact">DAB Contact Number</label>
@@ -491,7 +491,7 @@
     document.getElementById("contactHint").textContent = "";
     document.getElementById("agentTypeHint").textContent = "";
     document.getElementById("overlay").classList.remove("show");
-    document.getElementById("statusLine").textContent = "Data is saved directly to the shared Google Sheet.";
+    document.getElementById("statusLine").textContent = "Data is saved and shared.";
     document.getElementById("statusLine").classList.remove("err");
     window.scrollTo(0,0);
     document.getElementById("jcName").focus();
